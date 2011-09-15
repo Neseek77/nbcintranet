@@ -39,11 +39,11 @@ public class index extends HttpServlet {
                 + "<tr>"
                     + "<td class='frameTop' colspan='2'><img src='images/banner.jpg' id='banner'></td>"
                 + "</tr>"
-                    + "<td colspan='2' background='images/BlockHeader.png' id='Line'>");
+                    + "<td colspan='2' background='images/BlockHeader.png'align='center' id='Line'>");
     //Start TopMenu
     String strx=(String)session.getAttribute("User_ID");
     if(strx==null)
-    out.print("Don't have account yet? <a href=index?page=Registration>Register</a> | <a href=index?page=Login>Log in     </a>");
+    out.print("Don't have account yet? <a href=index?page=Registration>Register</a> | <a href=index?page=Login>Log in</a>&nbsp;&nbsp;");
     else
     out.print("Hi,:"+strx+"<a href='Logout'> Sign Out     </a></td></tr>"); 
 //End TopMenu
@@ -56,7 +56,7 @@ public class index extends HttpServlet {
            RequestDispatcher re=scr.getRequestDispatcher("/"+ str);
            re.include(request,response); 
     out.println("</tr>"
-                    + "<td class='frameButton' colspan='2'>button</td></tr>"
+                    + "<td class='frameButton' colspan='2'><image src='images/footer.gif'></td></tr>"
                     + "</table></center>"
                     + "</body></html>");
         } finally {            
