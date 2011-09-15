@@ -5,7 +5,7 @@
         }
         .frameLeft
         {
-            height:300px;
+            height:500px;
             width: 200px;
             border-color:blue;
             border-color:#ffffff;
@@ -28,7 +28,7 @@
             background-repeat:repeat-x;
             }
 table{
-         width: 800px;
+         width: 1010px;
          background:#FFFFFF;
         border-color:#06b;
 }
@@ -45,7 +45,7 @@ border-left: 1px solid #AACBEE;
 border-right: 1px solid #AACBEE;
 border-bottom: 1px solid #AACBEE;
 margin:0 auto;
-width:815px;
+width:1025px;
 }
 
 #Space{
@@ -61,7 +61,7 @@ padding:5px;
 }
 #banner{
    height:130px; 
-   width: 800px;
+   width: 1010px;
 }
 #Line{
    height:30px; 

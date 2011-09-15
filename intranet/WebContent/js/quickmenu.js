@@ -221,8 +221,8 @@ qmad.bhover="";\n\
 	a.ibullets_sub_align_x = "left";
 	a.ibullets_sub_align_y = "middle";
 */
-	// Tree Menu Add On
-	a.tree_width = 250;
+	// Tree Menu Add On//////////// Customize menu side
+	a.tree_width = 202;
 	a.tree_sub_sub_indent = 15;
 	a.tree_hide_focus_box = true;
 	a.tree_auto_collapse = true;
