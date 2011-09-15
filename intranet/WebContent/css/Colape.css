@@ -1,0 +1,40 @@
+.collapse p {padding:0 10px 1em}
+#switch, .switch {margin-bottom:5px; text-align:right}
+
+
+h2{font-size:1em}
+
+.expand{padding-bottom:.75em}
+
+/* --- Links  --- */
+a:link, a:visited {
+  border:1px dotted #ccc;
+  border-width:0 0 1px;
+  text-decoration:none;
+  color:blue
+}
+a:hover, a:active, a:focus {
+  border-style:solid;
+  background-color:#f0f0f0;
+  outline:0 none
+}
+a:active, a:focus {
+  color:red;
+}
+.expand a {
+  display:block;
+  padding:3px 10px
+}
+.expand a:link, .expand a:visited {
+  border-width:1px;
+  background-image:url(images/arrow-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+.expand a:hover, .expand a:active, .expand a:focus {
+  text-decoration:underline
+}
+.expand a.open:link, .expand a.open:visited {
+  border-style:solid;
+  background:#eee url(images/arrow-up.gif) no-repeat 98% 50%
+}
