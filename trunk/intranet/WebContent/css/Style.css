@@ -1,0 +1,127 @@
+
+/*Registration form*/
+        .Label
+        {
+            width: 200px;
+            text-align: right;
+            font-size: 18px;
+            border-spacing: 4px;
+        }
+        .TextField
+        {
+            background: url('images/bg.jpg') no-repeat;
+	    margin-bottom:0px;    
+            width: 235px;
+            height: 32px;
+            font-size: 16px;
+            border: solid 0px;
+             }
+        .NameField
+        {
+             
+            width: 120px;
+            height: 28px;
+            font-size: 18px;
+        }
+         .FirstLastName
+        {
+              background:transparent url('images/bg.jpg') no-repeat;
+           width: 120px;
+            text-align: left;
+            font-size: 18px;
+        }
+        .Titlesbar
+        {
+        font-size: 25px;
+        text-align: center;
+        border-spacing:4px;
+        }
+/*Login Form*/
+
+.Label1
+{
+            width: 100px;
+            height: 30px;
+            font-size:14px;
+            text-align:right;
+    
+}
+.TextLogin
+{
+              background:transparent url('images/bg.jpg') no-repeat;
+	   border:2 bisque;
+	   padding:4px 8px;
+	   margin-bottom:0px;    
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+}
+
+.fieldHolder
+{
+	width: 182px;
+	height: 27px;
+	  background:transparent url('images/bg.jpg') no-repeat;
+	float: right;
+}
+
+/*Pop up Setting*/
+.Popup
+        {
+            background:transparent url('images/bg.jpg') no-repeat;
+	   margin-bottom:0px;    
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+             }
+.popupLabel
+{
+       background:transparent url('images/bg.jpg') no-repeat;
+	   margin-bottom:0px;    
+            width: 110px;
+            height: 30px;
+            font-size: 16px;
+}
+
+#imgbox 
+{
+    vertical-align : middle;
+    position : absolute;
+    border: 1px solid #999;
+    background : #FFFFFF; 
+    filter: Alpha(Opacity=100);
+    visibility : hidden;
+    height : 200px;
+    width : 200px;
+    z-index : 50;
+    overflow : hidden;
+    text-align : center;
+}
+/*MyUpload*/
+
+.Selection
+{
+background: url('images/bg.jpg') no-repeat;
+	   margin-bottom:0px;    
+            width: 235px;
+            height: 32px;
+            font-size: 16px;
+            
+}
+.SortTextFiled{ 
+background-color:lightcoral;
+	   margin-bottom:0px;    
+            width: 220px;
+            height: 32px;
+            font-size: 16px;
+             }
+.checkedBox{
+}
+
+.TextArea{
+    width: 233px;
+    height:70px;
+    font-size: 16px;
+    border: solid 0px;
+    background: url('images/AreaBg.jpg') no-repeat;
+}
