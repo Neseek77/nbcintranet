@@ -25,7 +25,7 @@ public class AdminHome extends HttpServlet {
             //out.println(str);
             if (str==null)
                 str="AdminHome.html";
-        out.print("<head>");    
+        out.print("<head> ");    
     out.print("<html>");
       out.println("<link rel='stylesheet' type='text/css' href='css/menustyle.css'/>");
             // out.println("<form name='index' action='Login' method='Post'>");
