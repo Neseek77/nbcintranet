@@ -1,0 +1,68 @@
+
+        .frameTop
+        {
+            height: 150px;
+        }
+        .frameLeft
+        {
+            height:300px;
+            width: 200px;
+            border-color:blue;
+            border-color:#ffffff;
+        }
+        .frameButton
+        {
+            height: 100px;
+        }
+        body {
+            align:center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:13px;
+            color:#06C;
+            line-height:1.5em;
+            background:#7AAAD2;
+            background-repeat:repeat-x;
+            }
+table{
+         width: 800px;
+         background:#FFFFFF;
+        border-color:#06b;
+}
+#header{
+background:#FFFFFF;
+padding:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+}
+#wrapper{
+border-left: 1px solid #AACBEE;
+border-right: 1px solid #AACBEE;
+border-bottom: 1px solid #AACBEE;
+margin:0 auto;
+width:815px;
+}
+
+#Space{
+height:10px;
+}
+#header{
+background:#FFFFFF;
+padding:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+}
+#banner{
+   height:130px; 
+   width: 800px;
+}
+#Line{
+   height:30px; 
+   background-repeat:no-repeat;
+   text-align: right;
+   font-size: 14px;
+   color:#000;
+}

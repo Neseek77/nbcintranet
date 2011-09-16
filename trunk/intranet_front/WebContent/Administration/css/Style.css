@@ -1,0 +1,54 @@
+
+.tb { margin-top: 10%;font-size: 12px}
+.error{ margin-top:10%; border: 1px dotted #db1f1f; width: 250px }
+.msg { margin-top: 10%; border: 1px dotted #ccc; width: 250px }
+
+/*Registration form*/
+        .Label
+        {
+            width: 200px;
+            text-align: right;
+            font-size: 18px;
+        }
+        .TextField
+        {
+            width: 248px;
+            height: 28px;
+            font-size: 18px;
+            background: none;
+             }
+        #FirstLastName
+        {
+            width: 120px;
+            height: 28px;
+            font-size: 18px;
+        }
+         .FirstLastName
+        {
+           width: 120px;
+            text-align: left;
+            font-size: 18px;
+        }
+/*Login Form*/
+.Label1
+{
+            width: 100px;
+            height: 30px;
+            font-size:14px;
+            text-align:right;
+    
+}
+.TextField1{
+            width:100px;
+            height:30px;
+            font-size:14px;
+            text-align:left;
+}
+
+.fieldHolder
+{
+	width: 182px;
+	height: 27px;
+	background: url(images/tfbg2.gif) no-repeat;
+	float: left;
+}
