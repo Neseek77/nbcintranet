@@ -57,11 +57,10 @@ public class LastestNews extends HttpServlet {
                         //out.println(rs.getString("File_Name")+ " AND " + rs.getString("ANN_ID")+"<br/>");
                         
                             String filename="NewsEvent_Files/"+rs.getString("Front_Image_Name");
-                                out.print("<table>");
-                                out.print("<tr><td rowspan=2 border=2>");
+                                out.print("<table width='450'>");
+                                out.print("<tr><td rowspan=2 border=2 height=250px width=250px>");
                                 out.print("<a href='index?page=FullStory?Path=./NewsEvent_Files/"+rs.getString("Back_Image_Name")+"'><img src='"+filename+"' height=250px width=250px></a></br>");
-                                out.print("");
-                                out.print("<td align='center'><a href='index?page=FullStory?Path=./NewsEvent_Files/"+rs.getString("Back_Image_Name")+"'>"+rs.getString("News_Title")+"</a></td>");
+                                out.print("<td align='center' height=250px width=450px><a href='index?page=FullStory?Path=./NewsEvent_Files/"+rs.getString("Back_Image_Name")+"'>"+rs.getString("News_Title")+"</a></td>");
                                 out.print("<tr><td>"+rs.getString("News_Desc")+"</td></tr>");        
                          }
                         
