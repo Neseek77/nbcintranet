@@ -35,15 +35,15 @@ public class MyUploads extends HttpServlet {
             try{
                 
             out.print("<form name='MyUploads action='MyUpload' method='post'>"
-                    + "<table align='center'>"
-                    + "<tr><td>Enter Keywords:</td><td>"        
-                    + "<input type='text' name='KeyW' class='TextField'><td><select class='Selection'><option value='0'>All Categories</option>");
-                        
-            while(rs.next()){
-                            out.print("<option value='"+rs.getString("Category_ID") +"'>"+rs.getString("Category_Name")+" </option>");
+                    + "<table align='center' width='710'>"
+                    + "<tr><td>Enter Keywords:</td>" +
+                    		"<td><input type='text' name='KeyW' class='TextField'></td>" +
+                    		"<td><select class='Selection'><option value='0'>All Categories</option>");
+            					while(rs.next()){
+            							out.print("<option value='"+rs.getString("Category_ID") +"'>"+rs.getString("Category_Name")+" </option>");
                       }
-           out.print("</otpion><td><tr>");
-           out.print("<tr><td>File Title:</td><td><input type='text' class='TextField' name='Title'><td><input type='checkbox' name='byid' class='checkedBox'><input type='text' class='SortTextFiled' name='ByFileId'></td></tr>"
+            					out.print("</otpion></td></tr>");
+           out.print("<tr><td>File Title:</td><td><input type='text' class='TextField' name='Title'></td><td><input type='checkbox' name='byid' class='checkedBox'><input type='text' class='SortTextFiled' name='ByFileId'></td></tr>"
                    + "<tr><td><input type='submit' name='submit' value='search'></td></tr>");
            out.print("<tr><td><Select>");
                    try{
@@ -52,7 +52,8 @@ public class MyUploads extends HttpServlet {
                out.print("<option>"+rsx.getString("File_ID") +"</option></Select>");
                              }catch(Exception e){e.getLocalizedMessage();
                 }    
-           out.print("<input type='button' value='Upload' onclick=location.href='index?page=UploadFile'");
+           out.print("</td><td><input type='button' value='Upload' onclick=location.href='index?page=UploadFile'");
+           out.print("</td></tr></table>");
             }catch(Exception e){e.getLocalizedMessage();}
 //database
             String Fld="File_ID,Category_Title,File_Short_Desc,File_siz,Frequency";
