@@ -199,21 +199,25 @@ qmad.bhover="";\n\
 </script>');
 	/*******  Menu 0 Add-On Settings *******/
 	var a = qmad.qm0 = new Object();
-        
-	//Item Bullets Add On
+      
+	//*Item Bullets Add On
+	
 	a.ibullets_apply_to = "parent";
-	a.ibullets_main_image = "js/images/tree_main_plus.gif";
+/*	a.ibullets_main_image = "js/images/tree_main_plus.gif";
 	a.ibullets_main_image_hover = "js/images/tree_main_plus_hover.gif";
 	a.ibullets_main_image_active = "js/images/tree_main_plus_active.gif";
+	*/
 	a.ibullets_main_image_width = 10;
 	a.ibullets_main_image_height = 13;
 	a.ibullets_main_position_x = -200;
 	a.ibullets_main_position_y = -9;
 	a.ibullets_main_align_x = "right";
 	a.ibullets_main_align_y = "middle";
+	/*
 	a.ibullets_sub_image = "js/images/tree_sub_plus.gif";
 	a.ibullets_sub_image_hover = "js/images/tree_sub_plus_hover.gif";
 	a.ibullets_sub_image_active = "js/images/tree_sub_plus_active.gif";
+	*/
 	a.ibullets_sub_image_width = 5;
 	a.ibullets_sub_image_height = 5;
 	a.ibullets_sub_position_x = -10;
@@ -243,7 +247,6 @@ if(window.attachEvent)window.attachEvent("onload",qm_tree_init);
 else  if(window.addEventListener)window.addEventListener("load",qm_tree_init,1);
 
 // menu handler by D 
-
 
 //end menu handler by D
 
