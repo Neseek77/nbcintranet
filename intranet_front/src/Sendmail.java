@@ -20,7 +20,7 @@ public class Sendmail extends HttpServlet{
                    throws IOException, ServletException {
  PrintWriter out = response.getWriter();
         final String err = "/error.html";
-        String id=request.getParameter("UserID");
+        //String id=request.getParameter("UserID");
         String from = "NBC_Intranet_Mail_System";
         String to = request.getParameter("NBCMail");
         //String to ="da.born@nbc.org.kh";
