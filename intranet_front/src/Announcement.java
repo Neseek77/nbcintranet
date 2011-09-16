@@ -50,7 +50,7 @@ public class Announcement extends HttpServlet {
                         if(i>=currentRow && i<=currentRow+1){    
                         //out.println(rs.getString("File_Name")+ " AND " + rs.getString("ANN_ID")+"<br/>");
                         String filename="Announcement_Files/"+rs.getString("File_Name");
-                        out.print("<img src='"+filename+"' height=650px width=550px></br>");
+                        out.print("<img src='"+filename+"' height=900px width=700px></br>");
                          }
                         i++;
                     }
