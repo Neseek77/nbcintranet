@@ -35,7 +35,7 @@ public class index extends HttpServlet {
         out.print("</head>");    
     out.print("<html>"
             + "<body><div id='wrapper'><div id='Space'><div id='header'>"
-            + "<table>"
+            + "<table border='2'>"
                 + "<tr>"
                     + "<td class='frameTop' colspan='2'><img src='images/banner.jpg' id='banner'></td>"
                 + "</tr>"
@@ -55,7 +55,8 @@ public class index extends HttpServlet {
            ServletContext scr=this.getServletContext();
            RequestDispatcher re=scr.getRequestDispatcher("/"+ str);
            re.include(request,response); 
-    out.println("</tr>"
+    out.println("</td>" +
+    				"</tr>"
                     + "<td class='frameButton' colspan='2'><image src='images/footer.gif'></td></tr>"
                     + "</table></center>"
                     + "</body></html>");
