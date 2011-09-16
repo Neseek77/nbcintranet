@@ -200,7 +200,7 @@ qmad.bhover="";\n\
 	/*******  Menu 0 Add-On Settings *******/
 	var a = qmad.qm0 = new Object();
         
-	/* Item Bullets Add On
+	//Item Bullets Add On
 	a.ibullets_apply_to = "parent";
 	a.ibullets_main_image = "js/images/tree_main_plus.gif";
 	a.ibullets_main_image_hover = "js/images/tree_main_plus_hover.gif";
@@ -220,7 +220,7 @@ qmad.bhover="";\n\
 	a.ibullets_sub_position_y = -3;
 	a.ibullets_sub_align_x = "left";
 	a.ibullets_sub_align_y = "middle";
-*/
+
 	// Tree Menu Add On change menu side
         
 	a.tree_width = 202;
