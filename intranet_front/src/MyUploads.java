@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -29,6 +25,17 @@ public class MyUploads extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         ExecuteNonQ ex=new ExecuteNonQ();
+        String Fld="File_ID,File_Name,File_Short_Desc,File_size,Frequency,File_Path";
+        String Tbl="Uploaded_Files";
+        String FldCon="Category_ID";
+        //String ValCon="";
+        ResultSet rsx=null;
+        ResultSet Allresult=null;
+        String Sql="";
+        String CateID="";
+        String KeyW="";
+        String Title="";
+        String ID="";
          out.print("<link href='css/Style.css' rel='stylesheet' type='text/css'>");       
         try {
             ResultSet rs=ex.Empty("SELECT Category_Name,Category_ID From File_Categories");
@@ -45,31 +52,48 @@ public class MyUploads extends HttpServlet {
             					out.print("</otpion></td></tr>");
            out.print("<tr><td>File Title:</td><td><input type='text' class='TextField' name='Title'></td><td><input type='checkbox' name='byid' class='checkedBox'><input type='text' class='SortTextFiled' name='ByFileId'></td></tr>"
                    + "<tr><td><input type='submit' name='submit' value='search'></td></tr>");
-           out.print("<tr><td><Select>");
+           out.print("<tr><td><Select class='SmallSelection' id='Numberpage'>");
                    try{
-                   ResultSet rsx=ex.Empty("Select File_ID,File_Title,File_Short_Desc,File_Size,Frequency FROM Uploaded_Files Order By date_Upload");
+                   rsx=ex.Empty("Select File_ID,File_Title,File_Short_Desc,File_Size,Frequency FROM Uploaded_Files Order By date_Upload");
                            while(rsx.next())
-               out.print("<option>"+rsx.getString("File_ID") +"</option></Select>");
+               out.print("<option>"+rsx.getString("File_ID") +"</option>");
                              }catch(Exception e){e.getLocalizedMessage();
                 }    
-           out.print("</td><td><input type='button' value='Upload' onclick=location.href='index?page=UploadFile'");
+           out.print("</Select></td><td></td><td align='right'><input type='button' value='Upload' onclick=location.href='index?page=UploadFile'");
+           out.print("</td></tr><tr><td colspan='3'>" +
+           						"<table border='1'>"+
+           						"<tr>"+
+           						"<td>FileID</td>" +
+           						"<td>Title</td>" +
+           						"<td>Sort Desscription</td>" +
+           						"<td>Size</td>" +
+           						"<td>Frequency</td>" +
+           						"<td>Download</td>" +
+           						
+           				  "</tr>");
+ //Put data into Table on web page
+           Allresult=ex.SelectQueryByFieldWithCondition(Fld, Tbl, FldCon,"3");
+           try{		
+        	   while(Allresult.next())
+           			out.print("<tr><td>"+Allresult.getString("File_ID")
+           					 +"</td><td>"+Allresult.getString("File_Name")
+           					 +"</td><td>"+Allresult.getString("File_Short_Desc")
+           					 +"</td><td>"+Allresult.getString("File_Size")
+           					 +"</td><td>"+Allresult.getString("Frequency")
+           					 +"</td><td><a href='"+Allresult.getString("File_Path")+"/"+Allresult.getString("File_Name")+"'><img src='images/download.jpg' width='130' height='100'></a></td>");
+      			
+           }catch(Exception e){e.getLocalizedMessage();
+           }    
+           out.print("</td></tr></table>");				  
            out.print("</td></tr></table>");
             }catch(Exception e){e.getLocalizedMessage();}
 //database
-            String Fld="File_ID,Category_Title,File_Short_Desc,File_siz,Frequency";
-            String Tbl="Upload_Files";
-            String FldCon="Category_ID";
-            //String ValCon="";
-            ResultSet rsx=null;
-            String Sql="";
-            String CateID="";
-            String KeyW="";
-            String Title="";
-            String ID="";
             
-            String ValCon=request.getParameter("Selection");
-            if(ValCon.equalsIgnoreCase("0"))
-                rsx=ex.SelectQueryByFieldWithCondition(Fld, Tbl, FldCon,ValCon);
+          
+            //String ValCon=request.getParameter("Numberpage");
+            //if(ValCon.equalsIgnoreCase("0"))
+         
+/*select by selection option            
             else
                 CateID=request.getParameter("Category_ID");
                 KeyW=request.getParameter("KeyW");
@@ -82,8 +106,9 @@ public class MyUploads extends HttpServlet {
                          + " From Uploaded_Files JOIN File_Keywords ON Uploaded_Files.File_ID=File_Keywords.File_ID "
                         + "Where Uploaded_Files.Category_ID='"+CateID+"'"
                         + " AND File_Keywords.Keyword='"+KeyW+"'";
+                        */
 //rs=s.executeQuery("SELECT " + SELECTFIELDFROMBOTHTABLE + " FROM " +TABLENAME1+ " JOIN "+ TABLENAME2 +" ON "+CONDITIONTABLE1+"="+CONDITIONTABLE2);
-                rsx=ex.Empty(Sql);
+                //rsx=ex.Empty(Sql);
               
         } finally {            
             out.close();
