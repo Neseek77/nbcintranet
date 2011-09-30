@@ -89,7 +89,6 @@ public class MyUploads extends HttpServlet {
             }catch(Exception e){e.getLocalizedMessage();}
 //database
             
-          
             //String ValCon=request.getParameter("Numberpage");
             //if(ValCon.equalsIgnoreCase("0"))
          
