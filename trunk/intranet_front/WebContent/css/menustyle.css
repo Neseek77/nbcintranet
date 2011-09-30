@@ -1,18 +1,11 @@
 
-        .frameTop
-        {
-            height: 150px;
-        }
         .frameLeft
         {
             height:300px;
-            width: 170px;
-            border-color:blue;
-            border-color:#ffffff;
+            width: 244px;
         }
         .frameRight
         {
-            width: 8050px;
             border-color:red;
             border-color:#ffffff;
             text-align:center;
@@ -21,15 +14,6 @@
         {
             height: 100px;
         }
-        body {
-            align:center;
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:13px;
-            color:#06C;
-            line-height:1.5em;
-            background:#7AAAD2;
-            background-repeat:repeat-x;
-            }
 table{
          /*width: 1010px;*/
          background:#FFFFFF;
@@ -38,10 +22,10 @@ table{
 #header{
 background:#FFFFFF;
 padding:5px;
--moz-border-radius-topleft:5px;
--moz-border-radius-topright:5px;
--webkit-border-top-left-radius:5px;
--webkit-border-top-right-radius:5px;
+-moz-border-radius-topleft:0px;
+-moz-border-radius-topright:0px;
+-webkit-border-top-left-radius:0px;
+-webkit-border-top-right-radius:0px;
 }
 #wrapper{
 border-left: 1px solid #AACBEE;
@@ -51,25 +35,14 @@ margin:0 auto;
 width:1025px;
 }
 
-#Space{
-height:10px;
-}
-#header{
-background:#FFFFFF;
-padding:5px;
--moz-border-radius-topleft:5px;
--moz-border-radius-topright: 5px;
--webkit-border-top-left-radius:5px;
--webkit-border-top-right-radius:5px;
-}
 #banner{
    height:130px; 
    width: 1010px;
 }
 #Line{
-   height:30px; 
+   height:28px; 
+   font: 11px arial,Arial Unicode MS;
+   color:#343434;
    background-repeat:no-repeat;
    text-align: right;
-   font-size: 14px;
-   color:#000;
 }
