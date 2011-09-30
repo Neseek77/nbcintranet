@@ -1,5 +1,17 @@
 
-/*Registration form*/
+	body {
+            align:center;
+            background:#FFF;
+            background-repeat:repeat-x;
+            }
+	a{
+		color: #0033FF;
+		text-decoration: none;
+	}  
+	a:hover{
+		text-decoration: underline;
+	}
+  /*Registration form*/          
         .Label
         {
             width: 200px;
@@ -10,7 +22,7 @@
         .TextField
         {
             background: url('images/bg.jpg') no-repeat;
-	    margin-bottom:0px;    
+	    	margin-bottom:0px;    
             width: 235px;
             height: 32px;
             font-size: 16px;
@@ -25,7 +37,7 @@
         }
          .FirstLastName
         {
-              background:transparent url('images/bg.jpg') no-repeat;
+           background:transparent url('images/bg.jpg') no-repeat;
            width: 120px;
             text-align: left;
             font-size: 18px;
@@ -69,7 +81,7 @@
 .Popup
         {
             background:transparent url('images/bg.jpg') no-repeat;
-	   margin-bottom:0px;    
+	   		margin-bottom:0px;    
             width: 200px;
             height: 30px;
             font-size: 16px;
@@ -108,18 +120,9 @@ background: url('images/bg.jpg') no-repeat;
             font-size: 16px;
             
 }
-.SmallSelection
-{
-background: url('images/bg.jpg') no-repeat;
-	   margin-bottom:0px;    
-            width: 70px;
-            height: 30px;
-            font-size: 16px;
-            
-}
 .SortTextFiled{ 
-background-color:lightcoral;
-	   margin-bottom:0px;    
+			background-color:lightcoral;
+	   		margin-bottom:0px;    
             width: 220px;
             height: 32px;
             font-size: 16px;
